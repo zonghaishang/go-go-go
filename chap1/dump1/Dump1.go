@@ -11,6 +11,9 @@ func main()  {
 	words := make(map[string]int)
 	for input.Scan() {
 		fmt.Println("Received:" + input.Text())
+		if len(input.Text()) <= 0 {
+			break
+		}
 		words[input.Text()]++
 	}
 
