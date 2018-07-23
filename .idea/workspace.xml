@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb04d170-3573-4816-9a8e-a6c371a3342c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/chap1/dump1/Dump1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap1/fetch/Fetch.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +14,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Dump1.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dump1.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chap1/dump1/Dump1.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="187">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <folding>
+                <element signature="e#14#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fetch.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chap1/fetch/Fetch.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding>
+                <element signature="e#14#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="response.go" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/net/http/response.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.go" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/net/http/client.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="365" column="5" selection-start-line="365" selection-start-column="5" selection-end-line="365" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ioutil.go" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/io/ioutil/ioutil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scan.go" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/bufio/scan.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="132" column="17" selection-start-line="132" selection-start-column="17" selection-end-line="132" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -44,6 +95,7 @@
         <option value="$PROJECT_DIR$/chap1/echo2/Echo2.go" />
         <option value="$PROJECT_DIR$/chap1/echo3/Echo3.go" />
         <option value="$PROJECT_DIR$/chap1/dump1/Dump1.go" />
+        <option value="$PROJECT_DIR$/chap1/fetch/Fetch.go" />
       </list>
     </option>
   </component>
@@ -56,11 +108,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="387" />
-    <option name="y" value="26" />
-    <option name="width" value="1229" />
-    <option name="height" value="783" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -83,7 +135,7 @@
               <item name="go-learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="go-learning" type="462c0819:PsiDirectoryNode" />
               <item name="chap1" type="462c0819:PsiDirectoryNode" />
-              <item name="dump1" type="462c0819:PsiDirectoryNode" />
+              <item name="fetch" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -117,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build Dump1.go">
+  <component name="RunManager" selected="Go Build.go build Fetch.go">
     <configuration name="go build Dump1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-learning" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -143,6 +195,15 @@
       <filePath value="$PROJECT_DIR$/chap1/echo2/Echo2.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
+    <configuration name="go build Fetch.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-learning" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <parameters value="http://www.baidu.com" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/chap1/fetch/Fetch.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
     <configuration name="go build Helloworld.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-learning" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -156,9 +217,11 @@
       <item itemvalue="Go Build.go build Echo1.go" />
       <item itemvalue="Go Build.go build Echo2.go" />
       <item itemvalue="Go Build.go build Dump1.go" />
+      <item itemvalue="Go Build.go build Fetch.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Fetch.go" />
         <item itemvalue="Go Build.go build Dump1.go" />
         <item itemvalue="Go Build.go build Echo2.go" />
         <item itemvalue="Go Build.go build Echo1.go" />
@@ -167,7 +230,8 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="-1" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19527897" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -175,11 +239,11 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32954547" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32948717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.67948717" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3628205" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39795917" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3974359" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -199,18 +263,20 @@
     <MESSAGE value="first program" />
     <MESSAGE value="echo program" />
     <MESSAGE value="echo3 program" />
-    <option name="LAST_COMMIT_MESSAGE" value="echo3 program" />
+    <MESSAGE value="dump1" />
+    <option name="LAST_COMMIT_MESSAGE" value="dump1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/chap1/dump1/Dump1.go</url>
-          <line>13</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/chap1/fetch/Fetch.go</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -218,6 +284,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="e#14#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -419,15 +488,49 @@
     </entry>
     <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/bufio/scan.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="127" column="18" selection-start-line="127" selection-start-column="18" selection-end-line="127" selection-end-column="18" />
+        <state relative-caret-position="210">
+          <caret line="132" column="17" selection-start-line="132" selection-start-column="17" selection-end-line="132" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chap1/dump1/Dump1.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="187">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#14#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/net/http/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="365" column="5" selection-start-line="365" selection-start-column="5" selection-end-line="365" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/net/http/response.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/io/ioutil/ioutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap1/fetch/Fetch.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#14#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
