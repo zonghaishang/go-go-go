@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb04d170-3573-4816-9a8e-a6c371a3342c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/chap2/rune.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap4/json/Json.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,32 +14,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="utf8.go" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/unicode/utf8/utf8.go">
+      <file leaf-file-name="Json.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chap4/json/Json.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="220" column="39" selection-start-line="220" selection-start-column="37" selection-end-line="220" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rune.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chap2/rune.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="340">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding>
-                <element signature="e#14#47#0" expanded="true" />
+                <element signature="e#14#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proc.go" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/runtime/proc.go">
+      <file leaf-file-name="encode.go" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/encoding/json/encode.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3383">
-              <caret line="203" selection-start-line="203" selection-end-line="203" />
+            <state relative-caret-position="251">
+              <caret line="168" column="5" selection-start-line="168" selection-start-column="5" selection-end-line="168" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -69,6 +60,7 @@
         <option value="$PROJECT_DIR$/chap1/dump1/Dump1.go" />
         <option value="$PROJECT_DIR$/chap1/switch/SwitchCase.go" />
         <option value="$PROJECT_DIR$/chap2/rune.go" />
+        <option value="$PROJECT_DIR$/chap4/json/Json.go" />
       </list>
     </option>
   </component>
@@ -82,7 +74,6 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -95,6 +86,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,11 +104,21 @@
               <item name="go-learning" type="462c0819:PsiDirectoryNode" />
               <item name="chap2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="go-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="go-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="chap4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="go-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="go-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="chap4" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -145,22 +147,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build rune.go">
+  <component name="RunManager" selected="Go Build.go build Json.go">
     <configuration name="go build Dump1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-learning" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/chap1/dump1/Dump1.go" />
-      <directory value="$PROJECT_DIR$/" />
-    </configuration>
-    <configuration name="go build Echo2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-learning" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <parameters value="hello world 2018" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/chap1/echo2/Echo2.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <configuration name="go build Fetch.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -170,6 +163,14 @@
       <parameters value="http://www.baidu.com" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/chap1/fetch/Fetch.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="go build Json.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-learning" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/chap4/json/Json.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <configuration name="go build SwitchCase.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -189,33 +190,33 @@
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build Echo2.go" />
       <item itemvalue="Go Build.go build Dump1.go" />
       <item itemvalue="Go Build.go build Fetch.go" />
       <item itemvalue="Go Build.go build SwitchCase.go" />
       <item itemvalue="Go Build.go build rune.go" />
+      <item itemvalue="Go Build.go build Json.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Json.go" />
         <item itemvalue="Go Build.go build rune.go" />
         <item itemvalue="Go Build.go build SwitchCase.go" />
         <item itemvalue="Go Build.go build Fetch.go" />
         <item itemvalue="Go Build.go build Dump1.go" />
-        <item itemvalue="Go Build.go build Echo2.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20100144" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32948717" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32948717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.26153848" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -242,7 +243,8 @@
     <MESSAGE value="dump1" />
     <MESSAGE value="fetch http" />
     <MESSAGE value="switch" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch" />
+    <MESSAGE value="rune" />
+    <option name="LAST_COMMIT_MESSAGE" value="rune" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -253,10 +255,22 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="22" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoApplicationRunConfiguration">
+        <watch expression="s[i:]" language="go" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>s[i:]</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
       <expression>
         <expression-string>utf8.DecodeRuneInString(s)</expression-string>
@@ -266,6 +280,30 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/unicode/utf8/utf8.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3604">
+          <caret line="212" selection-start-line="212" selection-end-line="212" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/runtime/proc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3451">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap2/rune.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#14#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chap1/switch/SwitchCase.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -582,17 +620,34 @@
     </entry>
     <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/unicode/utf8/utf8.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="220" column="39" selection-start-line="220" selection-start-column="37" selection-end-line="220" selection-end-column="39" />
+        <state relative-caret-position="3604">
+          <caret line="212" selection-start-line="212" selection-end-line="212" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chap2/rune.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#14#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/encoding/json/encode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="168" column="5" selection-start-line="168" selection-start-column="5" selection-end-line="168" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap4/json/Json.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="e#14#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
