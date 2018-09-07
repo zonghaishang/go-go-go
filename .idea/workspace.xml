@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb04d170-3573-4816-9a8e-a6c371a3342c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/chap5/defer/Defer.go" afterDir="false" />
+    <list default="true" id="bb04d170-3573-4816-9a8e-a6c371a3342c" name="Default" comment="update readme">
+      <change afterPath="$PROJECT_DIR$/chap12/reflect/SetTest.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,28 +15,37 @@
     <session id="1605814307">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="2" />
+          <entry key="go" value="8" />
+          <entry key="md" value="1" />
+          <entry key="s" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="2" />
+          <entry key="Go" value="8" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="x86 Plan9 Assembly" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="183" />
+          <entry key="go" value="359" />
+          <entry key="md" value="37" />
+          <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="183" />
+          <entry key="Go" value="359" />
+          <entry key="PLAIN_TEXT" value="63" />
         </counts>
       </usages-collector>
     </session>
@@ -44,22 +53,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chap5/defer/Defer.go">
+        <entry file="file://$PROJECT_DIR$/chap12/reflect/SetTest.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+            <state relative-caret-position="142">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding>
-                <element signature="e#14#39#0" expanded="true" />
+                <element signature="e#14#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/time/time.go">
+        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/runtime/proc.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="898" column="5" selection-start-line="898" selection-start-column="5" selection-end-line="898" selection-end-column="5" />
+            <state relative-caret-position="237">
+              <caret line="154" selection-start-line="154" selection-end-line="154" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/runtime/asm_amd64.s">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="508" selection-start-line="508" selection-end-line="508" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/runtime/panic.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="576" selection-start-line="576" selection-end-line="576" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/reflect/value.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-205">
+              <caret line="728" column="18" selection-start-line="728" selection-start-column="9" selection-end-line="728" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -73,6 +109,11 @@
         <option value="Go Application" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Duration</find>
+    </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.9.3/libexec" />
   <component name="Git.Settings">
@@ -91,6 +132,8 @@
         <option value="$PROJECT_DIR$/chap2/rune.go" />
         <option value="$PROJECT_DIR$/chap4/json/Json.go" />
         <option value="$PROJECT_DIR$/chap5/defer/Defer.go" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/chap12/reflect/SetTest.go" />
       </list>
     </option>
   </component>
@@ -113,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,13 +167,12 @@
             <path>
               <item name="go-learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="go-learning" type="462c0819:PsiDirectoryNode" />
-              <item name="chap5" type="462c0819:PsiDirectoryNode" />
+              <item name="chap12" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -158,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build Defer.go">
+  <component name="RunManager" selected="Go Build.go build SetTest.go">
     <configuration name="go build Defer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-learning" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -168,22 +211,21 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build Fetch.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-learning" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <parameters value="http://www.baidu.com" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/chap1/fetch/Fetch.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build Json.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-learning" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/chap4/json/Json.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build SetTest.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-learning" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/chap12/reflect/SetTest.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -206,39 +248,39 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build Fetch.go" />
       <item itemvalue="Go Build.go build SwitchCase.go" />
       <item itemvalue="Go Build.go build rune.go" />
       <item itemvalue="Go Build.go build Json.go" />
       <item itemvalue="Go Build.go build Defer.go" />
+      <item itemvalue="Go Build.go build SetTest.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build SetTest.go" />
         <item itemvalue="Go Build.go build Defer.go" />
         <item itemvalue="Go Build.go build Json.go" />
         <item itemvalue="Go Build.go build rune.go" />
         <item itemvalue="Go Build.go build SwitchCase.go" />
-        <item itemvalue="Go Build.go build Fetch.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20958512" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22103004" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32948717" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3974359" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39617833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26153848" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2611465" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -248,6 +290,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -261,7 +313,9 @@
     <MESSAGE value="switch" />
     <MESSAGE value="rune" />
     <MESSAGE value="json" />
-    <option name="LAST_COMMIT_MESSAGE" value="json" />
+    <MESSAGE value="defer" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -274,14 +328,22 @@
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/chap5/defer/Defer.go</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/chap5/defer/Defer.go</url>
           <line>13</line>
-          <properties />
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/chap5/defer/Defer.go</url>
+          <line>12</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/chap5/defer/Defer.go</url>
+          <line>20</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -296,6 +358,11 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>y.Elem()</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>utf8.DecodeRuneInString(s)</expression-string>
         <language-id>go</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -303,9 +370,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/fmt/print.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3791">
@@ -355,13 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/runtime/asm_amd64.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="2343" column="20" selection-start-line="2343" selection-start-column="20" selection-end-line="2343" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/bufio/scan.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2159">
@@ -407,13 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/runtime/proc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3383">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chap1/switch/SwitchCase.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -439,9 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#14#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -452,19 +499,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/time/time.go">
+    <entry file="file://$PROJECT_DIR$/chap5/defer/Defer.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="898" column="5" selection-start-line="898" selection-start-column="5" selection-end-line="898" selection-end-column="5" />
+        <state relative-caret-position="289">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <element signature="e#14#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chap5/defer/Defer.go">
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/time/time.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="12240">
+          <caret line="720" column="26" selection-start-line="720" selection-start-column="26" selection-end-line="720" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/io/io.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="90" column="27" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/sync/waitgroup.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="122" column="63" selection-start-line="122" selection-start-column="63" selection-end-line="122" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/reflect/value.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-205">
+          <caret line="728" column="18" selection-start-line="728" selection-start-column="9" selection-end-line="728" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/runtime/proc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/runtime/asm_amd64.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="508" selection-start-line="508" selection-end-line="508" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.9.3/libexec/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="576" selection-start-line="576" selection-end-line="576" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap12/reflect/SetTest.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding>
-            <element signature="e#14#39#0" expanded="true" />
+            <element signature="e#14#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
