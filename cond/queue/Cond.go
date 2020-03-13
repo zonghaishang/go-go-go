@@ -3,25 +3,36 @@ package main
 import (
 	"fmt"
 	"sync"
+	"sync/atomic"
 )
 
 func main() {
 	queue := NewSafeQueue(1)
 
 	var signal sync.WaitGroup
-	signal.Add(2)
+	signal.Add(3)
 
 	go func() {
 		defer signal.Done()
-		for i := 0; i < 10 ; i++ {
+		for i := 0; i < 10; i++ {
 			queue.Put(i)
+			//fmt.Printf("Put %v\n", i)
 		}
 	}()
 
 	go func() {
 		defer signal.Done()
-		for i := 0; i < 10 ; i++ {
+		for i := 10; i < 20; i++ {
+			queue.Put(i)
+			//fmt.Printf("Put %v\n", i)
+		}
+	}()
+
+	go func() {
+		defer signal.Done()
+		for i := 0; i < 20; i++ {
 			_ = queue.Take()
+			//fmt.Printf("Take %v\n", v)
 		}
 	}()
 
@@ -29,54 +40,98 @@ func main() {
 }
 
 type safeQueue struct {
-	cond     *sync.Cond
-	capacity int
+	putLock  *sync.Mutex
+	takLock  *sync.Mutex
+	notEmpty *sync.Cond
+	notFull  *sync.Cond
+	len      int32
+	capacity int32
 	elements []interface{}
 }
 
-func NewSafeQueue(capacity int) *safeQueue {
+func NewSafeQueue(capacity int32) *safeQueue {
+	putLock := &sync.Mutex{}
+	takLock := &sync.Mutex{}
+
 	return &safeQueue{
-		cond:     sync.NewCond(&sync.Mutex{}),
+		putLock:  putLock,
+		takLock:  takLock,
+		notFull:  sync.NewCond(putLock),
+		notEmpty: sync.NewCond(takLock),
+		len:      0,
 		capacity: capacity,
 		elements: make([]interface{}, 0, capacity),
 	}
 }
 
 func (q *safeQueue) Put(e interface{}) {
-	q.cond.L.Lock()
-	defer q.cond.L.Unlock()
+	q.putLock.Lock()
 
-	if len(q.elements) == q.capacity {
-		q.cond.Wait()
+	for q.currentLength() == q.capacity {
+		q.notFull.Wait()
 	}
+	c := q.currentLength()
 
+	// not thread safe
 	q.elements = append(q.elements, e)
 
 	fmt.Printf("Put %v\n", e)
 
-	// notify to Take
-	if len(q.elements) > 0 {
-		q.cond.Signal()
+	len := q.updateLength(1)
+
+	if len < q.capacity {
+		q.notFull.Signal()
+	}
+
+	q.putLock.Unlock()
+
+	// notify
+	if c == 0 {
+		q.notEmpty.Signal()
 	}
 }
 
 func (q *safeQueue) Take() interface{} {
-	q.cond.L.Lock()
-	defer q.cond.L.Unlock()
+	q.takLock.Lock()
 
-	if len(q.elements) <= 0 {
-		q.cond.Wait()
+	for q.currentLength() == 0 {
+		q.notEmpty.Wait()
 	}
 
+	c := q.currentLength()
+
 	element := q.elements[0]
+	// not thread safe
 	q.elements = q.elements[1:]
 
 	fmt.Printf("Take %v\n", element)
 
-	// notify to put
-	if len(q.elements) < q.capacity {
-		q.cond.Signal()
+	len := q.updateLength(-1)
+
+	// notify to take
+	if len > 1 {
+		q.notEmpty.Signal()
+	}
+
+	q.takLock.Unlock()
+
+	// notify
+	if c == q.capacity {
+		q.notFull.Signal()
 	}
 
 	return element
+}
+
+func (q *safeQueue) updateLength(offset int32) int32 {
+	prev := atomic.LoadInt32(&q.len)
+	for !atomic.CompareAndSwapInt32(&q.len, prev, prev+offset) {
+		prev = atomic.LoadInt32(&q.len)
+	}
+
+	return prev + offset
+}
+
+func (q *safeQueue) currentLength() int32 {
+	return atomic.LoadInt32(&q.len)
 }
