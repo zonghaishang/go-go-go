@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb04d170-3573-4816-9a8e-a6c371a3342c" name="Default" comment="test cond.">
+      <change afterPath="$PROJECT_DIR$/chap12/expr/decode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap12/expr/encode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap12/expr/expr_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cond/queue/Cond.go" beforeDir="false" afterPath="$PROJECT_DIR$/cond/queue/Cond.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,16 +15,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="Go Application" />
+        <option value="Go File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Duration</find>
-      <find>DefaultServeMux</find>
-    </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -38,7 +34,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="false" />
     <property name="SearchEverywhereHistoryKey" value="utf8&#9;FILE&#9;file:///usr/local/Cellar/go/1.9.3/libexec/src/unicode/utf8/utf8.go" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -53,7 +49,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Go Build.go build go-go-go/cond/queue">
+  <component name="RunManager" selected="Go Test.TestEncodeAndDecode in go-go-go/chap12/expr">
     <configuration name="go build Defer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-learning" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -70,15 +66,6 @@
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/chap1/http/HttpServer.go" />
       <package value="go-go-go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build Json.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-learning" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/chap4/json/Json.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -100,20 +87,31 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="TestEncodeAndDecode in go-go-go/chap12/expr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-learning" />
+      <working_directory value="$PROJECT_DIR$/chap12/expr" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-go-go/chap12/expr" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestEncodeAndDecode$" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build Defer.go" />
       <item itemvalue="Go Build.go build HttpServer.go" />
-      <item itemvalue="Go Build.go build Json.go" />
       <item itemvalue="Go Build.go build SetTest.go" />
       <item itemvalue="Go Build.go build go-go-go/cond/queue" />
+      <item itemvalue="Go Test.TestEncodeAndDecode in go-go-go/chap12/expr" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestEncodeAndDecode in go-go-go/chap12/expr" />
         <item itemvalue="Go Build.go build go-go-go/cond/queue" />
         <item itemvalue="Go Build.go build HttpServer.go" />
         <item itemvalue="Go Build.go build SetTest.go" />
         <item itemvalue="Go Build.go build Defer.go" />
-        <item itemvalue="Go Build.go build Json.go" />
       </list>
     </recent_temporary>
   </component>
@@ -146,46 +144,54 @@
     <option name="LAST_COMMIT_MESSAGE" value="test cond." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="470" y="137" key="CommitChangelistDialog2" timestamp="1584075506087">
+    <state x="470" y="137" key="CommitChangelistDialog2" timestamp="1584083217524">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="470" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1584075506087" />
-    <state width="1557" height="232" key="GridCell.Tab.0.bottom" timestamp="1584083194634">
+    <state x="470" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1584083217524" />
+    <state width="620" height="466" key="DebuggerActiveHint" timestamp="1585233747553">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1557" height="232" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1584083194634" />
-    <state width="1557" height="232" key="GridCell.Tab.0.center" timestamp="1584083194633">
+    <state width="620" height="466" key="DebuggerActiveHint/0.23.1680.1027@0.23.1680.1027" timestamp="1585233747553" />
+    <state width="1638" height="259" key="GridCell.Tab.0.bottom" timestamp="1585233672846">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1557" height="232" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1584083194633" />
-    <state width="1557" height="232" key="GridCell.Tab.0.left" timestamp="1584083194633">
+    <state width="1638" height="259" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585233672846" />
+    <state width="1638" height="259" key="GridCell.Tab.0.center" timestamp="1585233672845">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1557" height="232" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1584083194633" />
-    <state width="1557" height="232" key="GridCell.Tab.0.right" timestamp="1584083194634">
+    <state width="1638" height="259" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585233672845" />
+    <state width="1638" height="259" key="GridCell.Tab.0.left" timestamp="1585233672845">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1557" height="232" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1584083194634" />
-    <state width="1557" height="272" key="GridCell.Tab.1.bottom" timestamp="1584083105653">
+    <state width="1638" height="259" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585233672845" />
+    <state width="1638" height="259" key="GridCell.Tab.0.right" timestamp="1585233672846">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1557" height="272" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1584083105653" />
-    <state width="1557" height="272" key="GridCell.Tab.1.center" timestamp="1584083105652">
+    <state width="1638" height="259" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585233672846" />
+    <state width="1638" height="259" key="GridCell.Tab.1.bottom" timestamp="1585233672908">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1557" height="272" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1584083105652" />
-    <state width="1557" height="272" key="GridCell.Tab.1.left" timestamp="1584083105652">
+    <state width="1638" height="259" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585233672908" />
+    <state width="1638" height="259" key="GridCell.Tab.1.center" timestamp="1585233672907">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1557" height="272" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1584083105652" />
-    <state width="1557" height="272" key="GridCell.Tab.1.right" timestamp="1584083105653">
+    <state width="1638" height="259" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585233672907" />
+    <state width="1638" height="259" key="GridCell.Tab.1.left" timestamp="1585233672907">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1557" height="272" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1584083105653" />
-    <state x="440" y="276" key="Vcs.Push.Dialog.v2" timestamp="1584075507655">
+    <state width="1638" height="259" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585233672907" />
+    <state width="1638" height="259" key="GridCell.Tab.1.right" timestamp="1585233672908">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="440" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1584075507655" />
+    <state width="1638" height="259" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585233672908" />
+    <state x="630" y="254" key="RollbackChangesDialog" timestamp="1584083595708">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="630" y="254" key="RollbackChangesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1584083595708" />
+    <state x="440" y="276" key="Vcs.Push.Dialog.v2" timestamp="1584083218760">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="440" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1584083218760" />
     <state x="453" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1584080064774">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -228,6 +234,11 @@
           <url>file://$PROJECT_DIR$/cond/queue/Cond.go</url>
           <line>70</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/chap12/expr/decode.go</url>
+          <line>89</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
