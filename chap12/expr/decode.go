@@ -8,13 +8,14 @@ import (
 	"text/scanner"
 )
 
-func Unmarshal(data []byte, ptr interface{}) error  {
+// Unmarshal bytes to any object.
+func Unmarshal(data []byte, ptr interface{}) error {
 	return decode(data, reflect.ValueOf(ptr).Elem())
 }
 
 func decode(data []byte, v reflect.Value) (err error) {
 
-	lex := &lexer{scan:scanner.Scanner{Mode:scanner.GoTokens}}
+	lex := &lexer{scan: scanner.Scanner{Mode: scanner.GoTokens}}
 	lex.scan.Init(bytes.NewReader(data))
 	lex.next()
 
@@ -28,7 +29,7 @@ func decode(data []byte, v reflect.Value) (err error) {
 	return nil
 }
 
-func read(lex *lexer, v reflect.Value)  {
+func read(lex *lexer, v reflect.Value) {
 	switch lex.token {
 	case scanner.Ident:
 		if lex.text() == "nil" {
@@ -57,7 +58,7 @@ func read(lex *lexer, v reflect.Value)  {
 
 }
 
-func readList(lex *lexer, v reflect.Value)  {
+func readList(lex *lexer, v reflect.Value) {
 	switch v.Kind() {
 	case reflect.Array: // (value ...)
 		for i := 0; !endList(lex); i++ {
@@ -69,7 +70,7 @@ func readList(lex *lexer, v reflect.Value)  {
 			read(lex, item)
 			v.Set(reflect.Append(v, item))
 		}
-	case reflect.Struct:  // ((name value) ...)
+	case reflect.Struct: // ((name value) ...)
 		for !endList(lex) {
 			lex.consume('(')
 			if lex.token != scanner.Ident {
@@ -107,11 +108,11 @@ func endList(lex *lexer) bool {
 }
 
 type lexer struct {
-	scan scanner.Scanner
-	token rune	// current token
+	scan  scanner.Scanner
+	token rune // current token
 }
 
-func (lex *lexer) next()  {
+func (lex *lexer) next() {
 	lex.token = lex.scan.Scan()
 }
 
@@ -119,7 +120,7 @@ func (lex *lexer) text() string {
 	return lex.scan.TokenText()
 }
 
-func (lex *lexer) consume(want rune)  {
+func (lex *lexer) consume(want rune) {
 	if lex.token != want {
 		panic(fmt.Sprintf("got %q, want %q", lex.text(), want))
 	}

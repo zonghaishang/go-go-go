@@ -6,7 +6,8 @@ import (
 	"reflect"
 )
 
-func Marshal(v interface{}) ([]byte, error)  {
+// Marshal any object to bytes.
+func Marshal(v interface{}) ([]byte, error) {
 	var buf bytes.Buffer
 	if err := encode(&buf, reflect.ValueOf(v)); err != nil {
 		return nil, err
